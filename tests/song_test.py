@@ -8,5 +8,7 @@ class TestSong(unittest.TestCase):
     
     def setUp(self):
         self.song = Song("Stayin' Alive")
-        self.song1 = Song("Summertime")
+        
 
+    def test_song_has_name(self):
+        self.assertEqual("Stayin' Alive", self.song.name)
